@@ -1,0 +1,55 @@
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+
+    &-image {
+        flex: 1 1 $breakpoint-lg/3;
+        min-height: 200px;
+        padding: $gap * 2;
+        background-image: linear-gradient(hsla(0, 0%, 20%, 0.3), hsla(0, 0%, 20%, 0.3)), url("../img/blue_buttons.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-clip: content-box;
+        @include screen-lg {
+            padding: 0;
+        }
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 $breakpoint-lg/3;
+        padding: $gap * 2;
+        line-height: 1.7;
+        @include screen-lg {
+            padding: 115px 0 170px;
+        }
+    }
+
+    &-item {
+        @include screen-lg {
+            max-width: $max-width-sm/2;
+            padding: 0 15% 0 19%;
+        }
+
+        & + & {
+            margin-top: $gap * 2;
+            @include screen-lg {
+                margin-top: 42px;
+            }
+        }
+
+        h4 {
+            font-size: 1.4rem;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.3rem;
+            letter-spacing: 0.3px;
+        }
+    }
+}

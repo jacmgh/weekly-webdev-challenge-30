@@ -1,0 +1,10 @@
+.description {
+    @extend %section-gaps;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: 100;
+    text-align: center;
+    @include screen-lg {
+        font-size: 3.5rem;
+    }
+}

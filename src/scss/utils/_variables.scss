@@ -1,0 +1,43 @@
+// Color pallete
+$grey-darkest: #111;
+$grey-darker: #222;
+$grey-dark: #353535;
+$grey: #777;
+$grey-light: #aaa;
+$grey-lighter: #ddd;
+$grey-lightest: #efeee9;
+$white-darker: #f5f5f5;
+$white-dark: #fafafa;
+
+// Media queries breakpoints
+$breakpoint-md: 480px; // Medium - tablet
+$breakpoint-lg: 960px; // Large - desktop
+$max-width: 1480px; // Max page width
+$max-width-sm: 1110px;
+
+// Grid gap
+$gap: 10px;
+$gap-lg: 30px;
+$gap-grid: 0;
+
+// Colors
+$color-text: $grey-darker;
+$color-link: #4eadff;
+$color-brand: #f76;
+$color-brand-secondary: #fff;
+
+// Fonts
+$font-family-primary: 'Roboto', Arial, Helvetica, sans-serif;
+$font-family-secondary: 'Roboto Slab', Arial, Helvetica, sans-serif;
+$font-family-tertiary: 'Yantramanav', Arial, Helvetica, sans-serif;
+
+// Borders
+$border-radius: 4px;
+
+// Transition
+$transition-duration: 0.2s;
+
+// Navbar
+$navbar-height: 3em;
+$navbar-height-lg: 9em;
+$navbar-height-scroll: 5em;

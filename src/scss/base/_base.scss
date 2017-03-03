@@ -1,0 +1,27 @@
+body {
+    background: $grey-lightest;
+    color: $color-text;
+    font-weight: 300;
+    font-size: 2rem;
+    font-family: $font-family-primary;
+    @include screen-lg {
+        font-size: 1.6rem;
+    }
+}
+
+a {
+    color: $color-link;
+    transition: $transition-duration;
+
+    &:hover {
+        color: $color-brand;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    margin: 50px 0;
+}

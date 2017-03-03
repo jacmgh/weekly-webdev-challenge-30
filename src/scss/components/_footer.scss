@@ -1,0 +1,57 @@
+.footer {
+    margin-bottom: 55px;
+    font-size: 2rem;
+    text-align: center;
+
+    &-social {
+        margin-bottom: $gap * 2;
+        @include screen-md {
+            margin: 0;
+            padding-left: $gap;
+            text-align: left;
+        }
+        @media (min-width: $max-width-sm + 40) {
+            padding: 0;
+        }
+
+        .fa {
+            color: $grey-dark;
+            font-size: 2.4rem;
+            text-decoration: none;
+
+            & + .fa {
+                margin-left: 24px;
+            }
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+
+        .fa-twitter:hover {
+            color: #1da1f2;
+        }
+
+        .fa-facebook-square:hover {
+            color: #48649f;
+        }
+
+        .fa-instagram:hover {
+            color: #000;
+        }
+
+        .fa-youtube-play:hover {
+            color: #e62117;
+        }
+    }
+
+    &-copyright {
+        @include screen-md {
+            padding-right: $gap;
+            text-align: right;
+        }
+        @media (min-width: $max-width-sm + 40) {
+            padding: 0;
+        }
+    }
+}

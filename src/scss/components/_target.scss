@@ -1,0 +1,7 @@
+.target {
+    position: relative;
+    top: -$navbar-height;
+    @include screen-lg {
+        top: -$navbar-height-scroll;
+    }
+}

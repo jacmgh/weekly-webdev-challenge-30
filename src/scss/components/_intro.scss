@@ -1,0 +1,35 @@
+.intro {
+    position: relative;
+    height: 568px;
+    margin-top: 0;
+    background: url("../img/intro_sm.jpg") no-repeat center;
+    background-size: cover;
+    @include screen-md {
+        background-image: url("../img/intro.jpg");
+    }
+    @include screen-lg {
+        height: 100vh;
+        min-height: 400px;
+        max-height: 800px;
+    }
+
+    &-content {
+        position: absolute;
+        left: 35%;
+        right: 5%;
+        bottom: 24%;
+        color: $grey-dark;
+        font-size: 2rem;
+        text-align: right;
+        @include screen-md {
+            left: 38%;
+            right: 10%;
+        }
+        @include screen-lg {
+            left: 42%;
+            right: 17%;
+            bottom: 18%;
+            font-size: 2.4rem;
+        }
+    }
+}

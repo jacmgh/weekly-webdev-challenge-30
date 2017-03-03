@@ -1,0 +1,50 @@
+.portfolio {
+    $component: &;
+
+    &-item {
+        position: relative;
+        height: 0;
+        padding-bottom: 75%;
+        background: no-repeat center;
+        background-size: cover;
+
+        // Dark background container
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            transition: $transition-duration;
+        }
+
+        &:hover {
+            // Darken background
+            &::before {
+                background: rgba(#000, 0.7);
+            }
+
+            // Show caption
+            #{$component}-caption {
+                top: 50%;
+                opacity: 1;
+            }
+        }
+    }
+
+    &-caption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 60%;
+        transform: translateY(-50%);
+        opacity: 0;
+        padding: $gap;
+        color: #fff;
+        font-size: 2.3rem;
+        text-align: center;
+        text-transform: uppercase;
+        transition: $transition-duration;
+    }
+}

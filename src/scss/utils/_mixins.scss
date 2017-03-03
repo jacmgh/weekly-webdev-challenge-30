@@ -1,0 +1,12 @@
+// Media queries
+@mixin screen-md {
+     @media (min-width: $breakpoint-md){
+        @content;
+    }
+}
+
+@mixin screen-lg {
+     @media (min-width: $breakpoint-lg){
+        @content;
+    }
+}

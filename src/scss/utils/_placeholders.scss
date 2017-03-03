@@ -1,0 +1,8 @@
+%section-gaps {
+    padding: 25px 10px;
+
+    @include screen-lg {
+        margin: 180px auto;
+        padding: 100px 186px 110px;
+    }
+}

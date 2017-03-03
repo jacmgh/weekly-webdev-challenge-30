@@ -1,0 +1,19 @@
+.btn {
+    display: inline-block;
+    padding: 17px 39px 15px;
+    border: 2px solid #000;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: $transition-duration;
+
+    &:hover {
+        border-color: $color-brand;
+        border-radius: 50px;
+        color: $color-brand;
+    }
+}

@@ -1,0 +1,46 @@
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: (-$gap) 0 0 (-$gap);
+    @include screen-lg {
+        margin: (-$gap-lg) 0 0 (-$gap-lg);
+    }
+    @include screen-lg {
+        &-container {
+            margin: 100px auto;
+        }
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 300px;
+        margin: $gap 0 0 $gap;
+        padding: 20px;
+        background: #fff;
+        line-height: 1.2;
+        text-align: center;
+        @include screen-lg {
+            margin: $gap-lg 0 0 $gap-lg;
+            padding: 36px 50px;
+        }
+    }
+
+    &-heading {
+        font-weight: 700;
+        font-size: 2rem;
+        @include screen-lg {
+            font-size: 1.8rem;
+        }
+    }
+
+    &-content {
+        margin: 40px 0 44px;
+    }
+
+    &-link {
+        margin-top: auto;
+        font-weight: 400;
+    }
+}

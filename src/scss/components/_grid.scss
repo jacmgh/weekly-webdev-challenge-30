@@ -1,0 +1,70 @@
+/* =============================================================================
+ * Container
+ * ========================================================================== */
+
+.container {
+    max-width: $max-width;
+    margin-right: auto;
+    margin-left: auto;
+
+    &::after {
+        clear: both;
+        display: table;
+        content: '';
+    }
+
+    &-sm {
+        max-width: $max-width-sm;
+    }
+}
+
+/* =============================================================================
+ * Each column
+ * ========================================================================== */
+
+[class^='col-'] {
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding: $gap-grid;
+}
+
+/* =============================================================================
+ * RWD columns
+ * ========================================================================== */
+
+@mixin grid($screen) {
+     @for $i from 1 through 12{
+        .col-#{$screen}-#{$i} {
+            width: $i / 12 * 100%;
+        }
+    }
+}
+
+// Small screen (mobile)
+.col-sm-0 {
+    display: none;
+}
+@include grid(sm); // Output: .col-sm-1 ... .col-sm-12
+
+// Medium screen (tablet)
+@include screen-md {
+    .col-sm-0 {
+        display: block;
+    }
+    .col-md-0 {
+        display: none;
+    }
+    @include grid(md); // Output: .col-md-1 ... .col-md-12
+}
+
+// Large screen (desktop)
+@include screen-lg {
+    .col-md-0 {
+        display: block;
+    }
+    .col-lg-0 {
+        display: none;
+    }
+    @include grid(lg); // Output: .col-lg-1 ... .col-lg-12
+}

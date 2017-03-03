@@ -1,0 +1,26 @@
+.highlight {
+    @extend %section-gaps;
+    background: #fff;
+    @include screen-lg {
+        font-size: 2rem;
+    }
+
+    &-heading {
+        margin-bottom: 25px;
+        font-size: 3rem;
+        font-family: $font-family-secondary;
+        text-align: center;
+        text-transform: uppercase;
+        @include screen-lg {
+            margin-bottom: 1.5em;
+            font-size: 4rem;
+        }
+    }
+
+    .btn {
+        margin-top: 25px;
+        @include screen-lg {
+            margin-top: 60px;
+        }
+    }
+}
